@@ -11,7 +11,18 @@ body {
   padding-top: 70px;
 }
 
+main.container {
+  margin-bottom: 50px;
+}
+
 // Bootstrap adjustments
 form.button_to {
   display: inline;
+}
+
+.navbar-nav li .current-user {
+  line-height: 20px;
+  position: relative;
+  display: block;
+  padding: 15px;
 }
