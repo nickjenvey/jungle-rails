@@ -138,19 +138,19 @@ puts "Creating Default User ..."
 User.destroy_all
 
 User.create!({
-  first_name: "Testy",
-  last_name: "McTesty",
-  email: "test@test.com",
-  password: "test",
-  password_confirmation: "test"
+  first_name: "Nick",
+  last_name: "Jenvey",
+  email: "nj@test.com",
+  password: "nick",
+  password_confirmation: "nick"
 })
 
 User.create!({
   first_name: "Travis",
   last_name: "Borsa",
   email: "tb@test.com",
-  password: "trav",
-  password_confirmation: "trav"
+  password: "travis",
+  password_confirmation: "travis"
 })
 
 User.create!({
@@ -168,7 +168,7 @@ puts "Re-creating Reviews ..."
 Review.destroy_all
 
 Review.create!({
-  product_id: 3,
+  product_id: 1,
   user_id: 2,
   description: Faker::Hipster.paragraph(2),
   rating: 4
@@ -182,14 +182,70 @@ Review.create!({
 })
 
 Review.create!({
-  product_id: 5,
+  product_id: 3,
   user_id: 3,
   description: Faker::Hipster.paragraph(2),
   rating: 3
 })
 
 Review.create!({
-  product_id: 1,
+  product_id: 4,
+  user_id: 2,
+  description: Faker::Hipster.paragraph(2),
+  rating: 2
+})
+
+Review.create!({
+  product_id: 5,
+  user_id: 2,
+  description: Faker::Hipster.paragraph(2),
+  rating: 4
+})
+
+Review.create!({
+  product_id: 6,
+  user_id: 3,
+  description: Faker::Hipster.paragraph(2),
+  rating: 1
+})
+
+Review.create!({
+  product_id: 7,
+  user_id: 3,
+  description: Faker::Hipster.paragraph(2),
+  rating: 3
+})
+
+Review.create!({
+  product_id: 8,
+  user_id: 2,
+  description: Faker::Hipster.paragraph(2),
+  rating: 2
+})
+
+Review.create!({
+  product_id: 9,
+  user_id: 2,
+  description: Faker::Hipster.paragraph(2),
+  rating: 4
+})
+
+Review.create!({
+  product_id: 10,
+  user_id: 3,
+  description: Faker::Hipster.paragraph(2),
+  rating: 1
+})
+
+Review.create!({
+  product_id: 11,
+  user_id: 3,
+  description: Faker::Hipster.paragraph(2),
+  rating: 3
+})
+
+Review.create!({
+  product_id: 12,
   user_id: 2,
   description: Faker::Hipster.paragraph(2),
   rating: 2
