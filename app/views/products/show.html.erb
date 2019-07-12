@@ -22,8 +22,33 @@
           <dd><%= @product.quantity %></dd>
           <dt>Price</dt>
           <dd><%= @product.price %></dd>
+          <dt>Overall Rating</dt>
         </dl>
+
+        <div class="panel panel-default reviews">
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th>Reviews</th>
+                <th>Ratings</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <%= render partial: "review", locals: { review: reviews, userinfo: userinfo } %>
+            </tbody>
+          </table>
+        </div>
       </div>
+
+    </div>
+
+    <div class="row">
+
+      <div class="col-sm-8">
+        <h3>Reviews:</h3>
+      </div>
+
     </div>
 
   </article>
