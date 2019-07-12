@@ -22,6 +22,14 @@
           <dd><%= @product.quantity %></dd>
           <dt>Price</dt>
           <dd><%= @product.price %></dd>
+          <dt>Average Rating</dt>
+          <dd>
+            <% if @average.to_i == 0 %>
+              This product has not been rated yet.
+            <% else %>
+              <%= @average.to_i %> out of 5
+            <% end %>
+          </dd>
           <% if current_user %>
             <dt style="margin-top: 50px;">Write a review</dt>
             <dd style="margin-top: 50px;">
@@ -30,7 +38,7 @@
                   <%= f.text_area :description, class: 'form-control' %>
                 </div>
                 <div class="form-group">
-                  <%= f.select :rating, [*1..5], class: 'form-control' %>
+                  Rating <%= f.select :rating, [*1..5], class: 'form-control' %>
                 </div>
                 <%= f.submit "Submit", class: 'btn btn-primary' %>
               <% end %>
