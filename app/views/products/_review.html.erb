@@ -1,0 +1,9 @@
+<div class="col-sm-6">
+  <div class="well">
+    <dl class="dl-horizontal">
+      <h4>Product Rating: <%= review.rating %> out of 5<br/></h4>
+      <h6>Created by <strong><%= review.user.first_name %></strong> about <%= time_ago_in_words(review.created_at) %> ago </h6>
+      <p><%= review.description %></p>
+    </dl>
+  </div>
+</div>
