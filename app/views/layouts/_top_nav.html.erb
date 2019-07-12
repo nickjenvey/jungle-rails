@@ -11,11 +11,6 @@
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
-        <li>
-          <%= link_to "/" do %>
-            <%= fa_icon "home" %>
-          <% end %>
-        </li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
             Categories
@@ -40,8 +35,8 @@
         <% end %>
        <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-            <span class="text-danger">
-              <%= fa_icon "lock", text: "Admin" %>
+            <span class="admin">
+              Admin
               <span class="caret"></span>
             </span>
           </a>
@@ -53,7 +48,7 @@
         </li>
         <li>
           <%= link_to cart_path do %>
-            <%= fa_icon "shopping-cart" %> (<%= cart.size %>)
+            Cart (<%= cart.size %>)
           <% end %>
         </li>
       </ul>

@@ -1,12 +1,10 @@
-<div class="col-sm-8">
-  <div class="well">
-    <dl class="dl-horizontal">
-      <h4>Product Rating: <%= review.rating %> out of 5<br/></h4>
-      <h6>Created by <strong><%= review.user.first_name %></strong> about <%= time_ago_in_words(review.created_at) %> ago </h6>
-      <p><%= review.description %></p>
-      <% if current_user == review.user %>
-        <%= link_to fa_icon('trash'), product_review_url(review.product, review), class: 'btn btn-sm btn-danger', method: :delete, data: { confirm: "Are you sure?" } %>
-      <% end %>
-    </dl>
-  </div>
+<div class="well">
+  <dl class="dl-horizontal">
+    <h4>Product Rating: <%= review.rating %> out of 5<br/></h4>
+    <h6>Created by <strong><%= review.user.first_name %></strong> about <%= time_ago_in_words(review.created_at) %> ago </h6>
+    <p><%= review.description %></p>
+    <% if current_user == review.user %>
+      <%= link_to fa_icon('trash'), product_review_url(review.product, review), class: 'btn btn-sm btn-danger', method: :delete, data: { confirm: "Are you sure?" } %>
+    <% end %>
+  </dl>
 </div>

@@ -8,7 +8,12 @@
 
 // Global
 body {
-  padding-top: 70px;
+  padding-top: 50px;
+  font-family: 'Source Code Pro', monospace;
+  font-weight: 300;
+  font-size: 16px;
+  background-color: #121212;
+  color: #fff;
 }
 
 main.container {
@@ -16,8 +21,79 @@ main.container {
 }
 
 // Bootstrap adjustments
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-weight: 700;
+}
+
+a {
+  color: #00ff48;
+}
+
+a:hover, a:focus {
+  color: #00ff48;
+  text-decoration: underline;
+}
+
+.well {
+  background-color: #121212;
+  border-color: #fff;
+  border-radius: 0;
+}
+
 form.button_to {
   display: inline;
+}
+
+.form-control {
+  border-radius: 0;
+  background-color: #121212;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+select {
+  background-color: #121212;
+  border: 1px solid #fff;
+  color: #fff;
+  border-radius: 0;
+}
+
+.navbar-default {
+  background-color: #121212;
+  border-color: #fff;
+}
+
+.navbar-default .navbar-header .navbar-brand {
+  color: #00ff48;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.navbar-default .navbar-collapse .navbar-nav a {
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.navbar-default .navbar-collapse .navbar-nav a:hover {
+  color: #00ff48;
+}
+
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+  color: #121212;
+  background-color: #00ff48;
+}
+
+.dropdown-menu {
+  background-color: #00ff48;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+  background-color: #121212;
 }
 
 .navbar-nav li .current-user {
@@ -25,4 +101,70 @@ form.button_to {
   position: relative;
   display: block;
   padding: 15px;
+}
+
+.page-header {
+  color: #fff;
+  border-color: #00ff48;
+}
+
+.panel-default {
+  background-color: #121212;
+  border-color: #fff;
+  border-radius: 0;
+}
+
+.btn {
+  border-radius: 0;
+}
+
+.btn-primary {
+  background-color: #00ff48;
+  color: #121212;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #00ff48;
+  color: #fff;
+}
+
+.btn-default {
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.btn-default:hover {
+  background-color: transparent;
+  color: #00ff48;
+  border-color: #fff;
+}
+
+.btn-success, .btn-danger {
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #00ff48;
+}
+
+.btn-success:hover, .btn-success:active, .btn-success:focus, .btn-danger:hover, .btn-danger:active, .btn-danger:focus {
+  background-color: transparent;
+  color: #fff;
+  border-color: #00ff48;
+}
+
+.stripe-button-el, .stripe-button-el span {
+  border-radius: 0 !important;
+  background-image: none !important;
+  background-color: #00ff48 !important;
+  color: #121212 !important;
+  border: none !important;
+  font-family: 'Source Code Pro', monospace !important;
+  font-weight: 400 !important;
+  text-shadow: none !important;
+  box-shadow: none !important;
+}
+
+.stripe-button-el:hover, .stripe-button-el span:hover {
+  color: #fff !important;
 }
