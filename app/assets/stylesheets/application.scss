@@ -92,8 +92,13 @@ select {
   box-shadow: none;
 }
 
+.dropdown-menu > li > a {
+  color: #121212 !important;
+}
+
 .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
   background-color: #121212;
+  color: #fff !important;
 }
 
 .navbar-nav li .current-user {
