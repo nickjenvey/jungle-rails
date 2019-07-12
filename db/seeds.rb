@@ -169,14 +169,14 @@ Review.destroy_all
 
 Review.create!({
   product_id: 1,
-  user_id: 2,
+  user_id: 1,
   description: Faker::Hipster.paragraph(2),
   rating: 4
 })
 
 Review.create!({
   product_id: 2,
-  user_id: 3,
+  user_id: 2,
   description: Faker::Hipster.paragraph(2),
   rating: 1
 })
@@ -190,7 +190,7 @@ Review.create!({
 
 Review.create!({
   product_id: 4,
-  user_id: 2,
+  user_id: 1,
   description: Faker::Hipster.paragraph(2),
   rating: 2
 })
@@ -211,7 +211,7 @@ Review.create!({
 
 Review.create!({
   product_id: 7,
-  user_id: 3,
+  user_id: 1,
   description: Faker::Hipster.paragraph(2),
   rating: 3
 })
@@ -225,28 +225,28 @@ Review.create!({
 
 Review.create!({
   product_id: 9,
-  user_id: 2,
+  user_id: 3,
   description: Faker::Hipster.paragraph(2),
   rating: 4
 })
 
 Review.create!({
   product_id: 10,
-  user_id: 3,
+  user_id: 1,
   description: Faker::Hipster.paragraph(2),
   rating: 1
 })
 
 Review.create!({
   product_id: 11,
-  user_id: 3,
+  user_id: 2,
   description: Faker::Hipster.paragraph(2),
   rating: 3
 })
 
 Review.create!({
   product_id: 12,
-  user_id: 2,
+  user_id: 3,
   description: Faker::Hipster.paragraph(2),
   rating: 2
 })
