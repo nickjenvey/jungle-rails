@@ -59,6 +59,19 @@ select {
   border-radius: 0;
 }
 
+.navbar-default .navbar-toggle {
+  border-radius: 0;
+  border-color: #fff;
+
+  &:hover, &:focus {
+    background-color: #00ff48;
+  }
+
+  .icon-bar {
+    background-color: #fff;
+  }
+}
+
 .navbar-default {
   background-color: #121212;
   border-color: #fff;
@@ -68,6 +81,7 @@ select {
   color: #00ff48;
   font-size: 16px;
   font-weight: 700;
+  text-transform: uppercase;
 }
 
 .navbar-default .navbar-collapse .navbar-nav a {
@@ -90,6 +104,10 @@ select {
   border: none;
   border-radius: 0;
   box-shadow: none;
+
+  @media screen and (max-width: 767px) {
+    background-color: #00ff48 !important;
+  }
 }
 
 .dropdown-menu > li > a {
@@ -106,6 +124,13 @@ select {
   position: relative;
   display: block;
   padding: 15px;
+  font-weight: 400;
+}
+
+.navbar-nav li .current-user-name {
+  font-weight: 700;
+  color: #00ff48;
+  text-transform: uppercase;
 }
 
 .page-header {
