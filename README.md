@@ -1,6 +1,6 @@
 # Jungle
 
-A mini e-commerce application built with Rails 4.2 for purposes of teaching Rails by example.
+A mini e-commerce application built with Rails 4.2 for purposes of teaching Rails by example. Learned how to navigate an existing code base and define new features using a unfamiliar language. Simulating real-world situations I was able to implement the features without thorough explanation.
 
 
 ## Setup
