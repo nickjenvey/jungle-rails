@@ -2,6 +2,10 @@
 
 A mini e-commerce application built with Rails 4.2 for purposes of teaching Rails by example. Learned how to navigate an existing code base and define new features using a unfamiliar language. Simulating real-world situations I was able to implement the features without thorough explanation.
 
+## Screenshots
+!["The homepage for Jungle"](https://github.com/nickjenvey/jungle-rails/blob/master/docs/jungle-home.png)
+!["A product page for Jungle containing reviews"](https://github.com/nickjenvey/jungle-rails/blob/master/docs/jungle-product-page.png)
+["The checkout page for Jungle"](https://github.com/nickjenvey/jungle-rails/blob/master/docs/jungle-checkout.png)
 
 ## Setup
 
